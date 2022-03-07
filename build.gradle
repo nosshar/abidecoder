@@ -23,13 +23,16 @@ repositories {
   maven { 
     url "https://dl.bintray.com/ethereum/maven/"
   }
+  maven {
+    url "https://jitpack.io"
+  }
 }
 
 dependencies {
   compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
   testCompile "org.jetbrains.kotlin:kotlin-test:$kotlin_version"
   testCompile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
-  compile "org.ethereum:ethereumj-core:1.5.+"
+  compile "com.github.ethergit:ethereumj-core:master-SNAPSHOT"
   compile "com.fasterxml.jackson.module:jackson-module-kotlin:2.9.0"
 }
 
